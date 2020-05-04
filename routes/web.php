@@ -14,3 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->post('/tags/object/contacts/{id:\d+}', function () use ($router) {
+    return response()->json(['post' => 504], 504);
+});
